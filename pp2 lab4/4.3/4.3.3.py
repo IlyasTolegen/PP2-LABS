@@ -3,7 +3,7 @@ def area_of_polygon(num_sides, side_length):
     return (num_sides * (side_length ** 2)) / (4 * math.tan(math.pi / num_sides))
 
 
-num_sides = 4
+num_sides = int(input("Enter the num_sides"))
 side_length = int(input("Enter the number: "))
 
 area = area_of_polygon(num_sides, side_length)
