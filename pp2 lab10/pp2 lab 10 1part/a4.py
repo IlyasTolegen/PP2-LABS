@@ -8,9 +8,9 @@ config = psycopg2.connect(
 )
 
 current = config.cursor()
-#a = input('Enter username : ')
+a = input('Enter username : ')
 b = input('Enter number : ')
-#sql = f'select * from phonebook where username = \'{a}\'' 
+sql = f'select * from phonebook where username = \'{a}\'' 
 sql = f'select * from phonebook where number = \'{b}\''
 current.execute(sql)
 
